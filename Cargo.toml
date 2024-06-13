@@ -1,0 +1,17 @@
+[package]
+name = "tuner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.15.3"
+rustfft = "6.2.0"
+num-complex = "0.4.6"
+
+[lib]
+name = "tuner_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tuner"
+path = "src/bin.rs"
